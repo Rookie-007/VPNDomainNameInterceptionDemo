@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/shape_dialog_bg_corner_white"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/intercept_img"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_dialog_base_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:lineSpacingExtra="6dp"
+            android:maxEms="15"
+            android:text="@string/number_of_interceptions"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/title_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/ad_bg_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_dialog_base_two_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+
+
+
+            <Button
+                android:id="@+id/btn_dialog_base_ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@null"
+                android:text="@string/oh_i_see"
+                android:textColor="@color/font_text_color"
+                android:textSize="@dimen/font_size_16"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
